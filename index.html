@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="form_container">
+            <img src="images/sign-post-5655110_1920.png">
+            <form method="get" action="#">
+                <h1>Hello!<br>
+                    We are glad to see you :)
+                </h1>
+
+                <div class="social_login">
+                    <button type="button" class="google"><img src="icons/843776_google_icon.svg">Sign up with Google</button>
+                    <button type="button" class="facebook"><img src="icons/104498_facebook_icon.svg"></button>
+                    <button type="button" class="twitter"><img src="icons/104501_twitter_bird_icon.svg"></button>
+                </div>
+
+                <div class="separator">
+                    <div class="line_separator"></div>
+                    <h4>or</h4>
+                    <div class="line_separator"></div>
+                </div>
+
+                <div class="input_section">
+                    <div class="input_field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" class="input" maxlength="20" required>
+                    </div>
+
+                    <div class="input_field">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="input" required>
+                    </div>
+                </div>
+
+                <div class="input_section">
+                    <div class="input_field">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" class="input" maxlength="15" required>
+                    </div>
+
+                    <div class="input_field">
+                        <label for="confirm_pass">Repeat Password</label>
+                        <input type="password" id="confirm_pass" name="confirm_pass" class="input" maxlength="15" onblur="passwordCheck()" required>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">I agree to <span class="terms_of_service">terms of service</span> and <span
+                            class="terms_of_service">privacy policy</span></label>
+                </div>
+
+                <button type="submit" class="submit_btn">Sign up</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

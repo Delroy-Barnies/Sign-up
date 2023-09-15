@@ -1,0 +1,185 @@
+:root {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("../images/deer-3275594_1280.jpg");
+    background-size: 100% 100%;
+}
+
+.form_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1050px;
+    height: 600px;
+    border-radius: 25px;
+
+    background-color: rgb(102, 32, 168);
+    /*filter: drop-shadow(0 0 0.075rem black);*/
+
+    overflow: hidden;
+}
+
+.form_container img {
+    width: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+    height: 100%;
+    color: white;
+    margin-left: 50px;
+}
+
+form h1 {
+    font-size: max(50%, 30px);
+}
+
+form button {
+    width: 200px;
+}
+
+.google {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 0;
+
+    background-image: linear-gradient(to right, rgb(195, 131, 255), white);
+}
+
+.google:active{
+    background-image: linear-gradient(to right, rgb(149, 49, 243), rgb(185, 185, 185));
+}
+
+.google img {
+    width: 20px;
+    margin: 10px;
+}
+
+.facebook img,
+.twitter img {
+    width: 30px;
+}
+
+.facebook,
+.twitter {
+    width: 100px;
+
+    padding: 5px;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    background-color: rgb(102, 32, 168);
+    ;
+}
+
+.facebook:active,
+.twitter:active {
+    background-image: linear-gradient(to right, rgb(195, 131, 255), white);
+}
+
+.social_login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.separator h4 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.line_separator {
+    background-color: white;
+    height: 1px;
+    width: 30%;
+}
+
+.input {
+    width: 170px;
+    height: 30px;
+    border-radius: 25px;
+    border-width: 1.5px;
+    border-color: white;
+    border-style: solid;
+    background-color: rgba(103, 32, 168, 0.815);
+    color: white;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.input_section {
+    display: flex;
+    width: 65%;
+    height: 17%;
+    gap: 30px;
+    align-items: center;
+}
+
+.input_field {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_section label {
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+#terms {
+    width: 20px;
+    margin-top: 10px;
+}
+
+.terms_of_service {
+    text-decoration: underline;
+}
+
+.submit_btn {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 0;
+
+    font-weight: bold;
+
+    background-image: linear-gradient(to right, rgb(195, 131, 255), white);
+}
+
+.submit_btn:active {
+    background-image: linear-gradient(to right, rgb(149, 49, 243), rgb(185, 185, 185));
+}
